@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">global-dialog</string>
+    <string name="ErroAccoutHasLogined">您的账号在其它设备上登陆，请重新登陆!</string>
+</resources>

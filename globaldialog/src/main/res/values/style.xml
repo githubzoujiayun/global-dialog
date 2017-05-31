@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="dialog" parent="@style/Base.Theme.AppCompat.Dialog"><!--name是我们在使用时要用到的资源的标志，parent是指当前的样式所继承的父类样式-->
+        <item name="android:windowNoTitle">true</item>
+        <!--隐藏标题栏-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!--这儿也很重要啊，这用#00000000，否则的话这儿出来后有一个黑色的背景-->
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+</resources>

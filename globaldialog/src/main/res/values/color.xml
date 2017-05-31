@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#ce3232</color>
+    <color name="colorDialogRedPressTv">#ce8888</color>
+    <color name="colorLigntTv">#999999</color>
+    <color name="colorLine">#e6e6e6</color>
+    <color name="colorDialogBtnPress">#ececee</color>
+    <color name="colorGreenSliding">#5ed125</color>
+</resources>
