@@ -20,7 +20,6 @@
             android:layout_marginRight="40dp"
             android:gravity="center"
             android:lineSpacingExtra="5dp"
-            android:text="信息未完善，确定进入111111111111111下一步吗？"
             android:textColor="@android:color/black"
             android:textSize="16sp"
             android:textStyle="bold"/>

@@ -6,7 +6,7 @@
     >
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/shape_dialog"
         android:orientation="vertical"
@@ -14,14 +14,13 @@
 
         <TextView
             android:id="@+id/tv_description"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginLeft="40dp"
             android:layout_marginRight="40dp"
             android:gravity="center"
             android:lineSpacingExtra="5dp"
-            android:text="信息未完善，确定进入111111111111111下一步吗？"
             android:textColor="@android:color/black"
             android:textSize="16sp"
             android:textStyle="bold"/>
@@ -43,7 +42,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@drawable/selector_dialog_btn"
-                android:text="好的"
+                android:text="@string/ok"
                 android:textColor="@color/selector_dialog_tv"
                 android:textSize="17sp"/>
         </LinearLayout>
