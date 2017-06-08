@@ -12,13 +12,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        new GlobalDialog.Builder().setContext(MainActivity.this).setForce(true).setDescription(MainActivity.this.getResources().getString(R.string.ErroAccoutHasLogined)).setStyle(GlobalDialog.Style.SingleAlter).setDialogClickListener(new OnDialogClickListener() {
+        new GlobalDialog.Builder().setContext(MainActivity.this).setForce(true).setDescription(MainActivity.this.getResources().getString(R.string.ErroAccoutHasLogined)).setStyle(GlobalDialog.Style.DoubleAlert).setDialogClickListener(new OnDialogClickListener() {
             @Override
             public void onSure() {
                 super.onSure();
 
             }
+            @Override
+            public void onCancel() {
+                super.onCancel();
+            }
         }).build().show();
-
     }
 }

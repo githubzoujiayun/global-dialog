@@ -10,8 +10,6 @@ import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import com.txm.topcodes.globaldialog.util.LogUtil;
-
 import java.lang.ref.WeakReference;
 import java.util.HashMap;
 import java.util.Map;
@@ -39,15 +37,15 @@ public class GlobalDialog {
 	public GlobalDialog(Builder builder) {
 		this.contextWeak = new WeakReference<Context>(builder.context);
 		this.description = builder.description;
-		this.isForce=builder.isForce;
+		this.isForce = builder.isForce;
 		this.style = builder.style;
-		//Solve concurrent problems.
+		//Solve thread-safe problems.
 		key = UUID.randomUUID().toString();
 		listenerMap.put(key, builder.onDialogClickListener);
 	}
 
 	public void show() {
-		if (contextWeak.get() != null) {
+		if (contextWeak.get() != null && description != null) {
 			if (style == Style.SingleAlter) {
 				contextWeak.get().startActivity(new Intent(contextWeak.get(), SingleAlterDialog.class).putExtra("description", description).putExtra("key", key).putExtra("isForce", isForce));
 			}
@@ -56,7 +54,12 @@ public class GlobalDialog {
 			}
 		} else {
 			//This is a runtimeException.
-			throw new UnsupportedOperationException("The reference of dialog has not exist!");
+			if (contextWeak.get() == null) {
+				throw new UnsupportedOperationException("The reference of dialog has not exist,please execute setContext() to solve it.");
+			}
+			if (description == null) {
+				throw new UnsupportedOperationException("The description has not exist,please execute setDescription() to solve it.");
+			}
 		}
 	}
 
@@ -120,7 +123,6 @@ public class GlobalDialog {
 			getWindow().setLayout(RelativeLayout.LayoutParams.WRAP_CONTENT,
 					RelativeLayout.LayoutParams.WRAP_CONTENT);
 			String description = getIntent().getStringExtra("description");
-			LogUtil.getDefined("description").d(description);
 			message.setText(description);
 			Button button = (Button) findViewById(R.id.bt_ok);
 			final String key = getIntent().getStringExtra("key");
@@ -160,7 +162,6 @@ public class GlobalDialog {
 			getWindow().setLayout(RelativeLayout.LayoutParams.WRAP_CONTENT,
 					RelativeLayout.LayoutParams.WRAP_CONTENT);
 			String description = getIntent().getStringExtra("description");
-			LogUtil.getDefined("description").d(description);
 			message.setText(description);
 			Button b1 = (Button) findViewById(R.id.bt_ok);
 			Button b2 = (Button) findViewById(R.id.btn_cancel);
