@@ -1,7 +1,7 @@
-auto-cache
+global-dialog
 ======
 
-An autoCache frame for Android. For more information see [the website][1].
+A global dialog frame for Android. For more information see [the website][1].
 
 Download
 --------
@@ -9,15 +9,15 @@ Download
 Maven:
 ```xml
 <dependency>
-  <groupId>com.txm.topcodes.autocache</groupId>
-  <artifactId>autocache</artifactId>
-  <version>0.1.2</version>
+  <groupId>com.txm.topcodes.globaldialog</groupId>
+  <artifactId>globaldialog</artifactId>
+  <version>0.1.3</version>
   <type>pom</type>
 </dependency>
 ```
 or Gradle:
 ```groovy
-compile 'com.txm.topcodes.autocache:autocache:0.1.2'
+compile 'com.txm.topcodes.globaldialog:globaldialog:0.1.3'
 ```
 
 Snapshots of the development version are available in [Tangxianming's `snapshots` repository][snap].
@@ -38,5 +38,5 @@ License
     limitations under the License.
 
 
- [1]: http://www.jianshu.com/p/1df4dbd90046
+ [1]: http://www.jianshu.com/writer#/notebooks/6767015/notes/13166270
  [snap]: https://dl.bintray.com/kimball/maven/
