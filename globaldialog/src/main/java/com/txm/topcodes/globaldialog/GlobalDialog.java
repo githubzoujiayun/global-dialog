@@ -126,10 +126,13 @@ public class GlobalDialog {
 			message.setText(description);
 			Button button = (Button) findViewById(R.id.bt_ok);
 			final String key = getIntent().getStringExtra("key");
+			final OnDialogClickListener listener = listenerMap.get(key);
 			button.setOnClickListener(new View.OnClickListener() {
 				@Override
 				public void onClick(View v) {
-					listenerMap.get(key).onSure();
+					if (listener != null) {
+						listener.onSure();
+					}
 					//Release reference.
 					listenerMap.remove(key);
 					//Close Dialog.
@@ -166,10 +169,13 @@ public class GlobalDialog {
 			Button b1 = (Button) findViewById(R.id.bt_ok);
 			Button b2 = (Button) findViewById(R.id.btn_cancel);
 			final String key = getIntent().getStringExtra("key");
+			final OnDialogClickListener listener = listenerMap.get(key);
 			b1.setOnClickListener(new View.OnClickListener() {
 				@Override
 				public void onClick(View v) {
-					listenerMap.get(key).onSure();
+					if (listener != null) {
+						listener.onSure();
+					}
 					//Release reference.
 					listenerMap.remove(key);
 					//Close Dialog.
@@ -179,7 +185,9 @@ public class GlobalDialog {
 			b2.setOnClickListener(new View.OnClickListener() {
 				@Override
 				public void onClick(View v) {
-					listenerMap.get(key).onCancel();
+					if (listener != null) {
+						listener.onCancel();
+					}
 					//Release reference.
 					listenerMap.remove(key);
 					//Close Dialog.
