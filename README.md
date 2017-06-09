@@ -1,7 +1,10 @@
 global-dialog
 ======
 
-A global dialog frame for Android. For more information see [the website][1].
+A **global** dialog frame for Android. For more information see [the website][1].
+
+![describe01](http://upload-images.jianshu.io/upload_images/2109293-dec5ac150c17ff3e.gif?imageMogr2/auto-orient/strip "情况1")
+![describe02](http://upload-images.jianshu.io/upload_images/2109293-2de343c7cf8efe06.gif?imageMogr2/auto-orient/strip "情况N")
 
 Download
 --------
@@ -11,13 +14,13 @@ Maven:
 <dependency>
   <groupId>com.txm.topcodes.globaldialog</groupId>
   <artifactId>globaldialog</artifactId>
-  <version>0.1.3</version>
+  <version>0.1.5</version>
   <type>pom</type>
 </dependency>
 ```
 or Gradle:
 ```groovy
-compile 'com.txm.topcodes.globaldialog:globaldialog:0.1.3'
+compile 'com.txm.topcodes.globaldialog:globaldialog:0.1.5'
 ```
 
 Snapshots of the development version are available in [Tangxianming's `snapshots` repository][snap].
