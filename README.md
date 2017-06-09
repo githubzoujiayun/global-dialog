@@ -14,13 +14,13 @@ Maven:
 <dependency>
   <groupId>com.txm.topcodes.globaldialog</groupId>
   <artifactId>globaldialog</artifactId>
-  <version>0.1.5</version>
+  <version>0.1.6</version>
   <type>pom</type>
 </dependency>
 ```
 or Gradle:
 ```groovy
-compile 'com.txm.topcodes.globaldialog:globaldialog:0.1.5'
+compile 'com.txm.topcodes.globaldialog:globaldialog:0.1.6'
 ```
 
 Snapshots of the development version are available in [Tangxianming's `snapshots` repository][snap].
