@@ -1,7 +1,10 @@
 global-dialog
 ======
 
-A global dialog frame for Android. For more information see [the website][1].
+A **global** dialog frame for Android. For more information see [the website][1].
+
+![](http://upload-images.jianshu.io/upload_images/2109293-dec5ac150c17ff3e.gif?imageMogr2/auto-orient/strip)
+![](http://upload-images.jianshu.io/upload_images/2109293-2de343c7cf8efe06.gif?imageMogr2/auto-orient/strip)
 
 Download
 --------
