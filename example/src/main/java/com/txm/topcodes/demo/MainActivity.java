@@ -12,6 +12,6 @@ public class MainActivity extends AppCompatActivity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
-		new GlobalDialog.Builder().setContext(MainActivity.this).setForce(true).setDescription(MainActivity.this.getResources().getString(R.string.ErroAccoutHasLogined)).setStyle(GlobalDialog.Style.SingleAlter).build().show();
+		new GlobalDialog.Builder().setContext(MainActivity.this).setForce(false).setDescription(MainActivity.this.getResources().getString(R.string.ErroAccoutHasLogined)).setStyle(GlobalDialog.Style.SingleAlter).build().show();
 	}
 }

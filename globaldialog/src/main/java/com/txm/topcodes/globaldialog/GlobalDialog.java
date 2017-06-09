@@ -67,8 +67,8 @@ public class GlobalDialog {
 		private Context context;
 		private String description;
 		private Style style;
-		//default isn't force.
-		private Boolean isForce;
+		//default is force.
+		private Boolean isForce = true;
 
 		private OnDialogClickListener onDialogClickListener;
 
@@ -117,7 +117,7 @@ public class GlobalDialog {
 		public void onCreate(Bundle savedInstanceState) {
 			super.onCreate(savedInstanceState);
 			setContentView(R.layout.dialog_single_alter);
-			mIsForce = getIntent().getBooleanExtra("isForce", false);
+			mIsForce = getIntent().getBooleanExtra("isForce", true);
 			TextView message = (TextView) findViewById(R.id.tv_description);
 			setFinishOnTouchOutside(false);
 			getWindow().setLayout(RelativeLayout.LayoutParams.WRAP_CONTENT,
@@ -159,7 +159,7 @@ public class GlobalDialog {
 		public void onCreate(Bundle savedInstanceState) {
 			super.onCreate(savedInstanceState);
 			setContentView(R.layout.dialog_double_alter);
-			mIsForce = getIntent().getBooleanExtra("isForce", false);
+			mIsForce = getIntent().getBooleanExtra("isForce", true);
 			TextView message = (TextView) findViewById(R.id.tv_description);
 			setFinishOnTouchOutside(false);
 			getWindow().setLayout(RelativeLayout.LayoutParams.WRAP_CONTENT,
