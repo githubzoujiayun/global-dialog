@@ -24,7 +24,7 @@ compile 'com.txm.topcodes.globaldialog:globaldialog:0.1.6'
 
 Usage mode
 --------
-Normal
+
 ```java
 new GlobalDialog.Builder()
                 .setContext(context) 
