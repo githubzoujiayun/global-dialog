@@ -22,6 +22,29 @@ or Gradle:
 compile 'com.txm.topcodes.globaldialog:globaldialog:0.1.6'
 ```
 
+Example
+--------
+Normal
+```java
+new GlobalDialog.Builder()
+                .setContext(context) 
+                .setDescription("hello world") //弹出框的提示信息。
+                .setStyle(GlobalDialog.Style.SingleAlert) //弹窗的样式。有DoubleAlert、SingleAlert两种，默认为后者。
+                .setForce(ture) //设置弹框销毁的策略。默认为true。
+                .setDialogClickListener(new OnDialogClickListener() { //设置回调，也可以不设置。
+                    @Override
+                    public void onSure() {
+                        super.onSure();
+                    }
+                }).build().show();
+```
+Or sample
+```java
+new GlobalDialog.Builder()
+                .setContext(context) 
+                .setDescription("hello world") 
+                .build().show();
+```
 Snapshots of the development version are available in [Tangxianming's `snapshots` repository][snap].
 
 License
