@@ -45,6 +45,7 @@ new GlobalDialog.Builder()
                 .build().show();
 ```
 Snapshots of the development version are available in [Tangxianming's `snapshots` repository][snap].
+
 License
 -------
 
