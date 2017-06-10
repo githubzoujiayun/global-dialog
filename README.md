@@ -20,7 +20,7 @@ or Gradle:
 ```groovy
 compile 'com.txm.topcodes.globaldialog:globaldialog:0.1.6'
 ```
-Snapshots of the development version are available in [Tangxianming's `snapshots` repository][snap].
+
 Usage mode
 --------
 Common：
@@ -44,7 +44,7 @@ new GlobalDialog.Builder()
                 .setDescription("hello world") 
                 .build().show();
 ```
-
+Snapshots of the development version are available in [Tangxianming's `snapshots` repository][snap].
 License
 -------
 
