@@ -1,7 +1,7 @@
 global-dialog
 ======
 
-A **global** dialog frame for Android. For more information see [the website][1].
+A **global** dialog frame for Android. For another reading pattern see [the website][1].
 
 ![](http://upload-images.jianshu.io/upload_images/2109293-dec5ac150c17ff3e.gif?imageMogr2/auto-orient/strip)
 
