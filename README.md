@@ -22,7 +22,7 @@ or Gradle:
 compile 'com.txm.topcodes.globaldialog:globaldialog:0.1.6'
 ```
 
-Example
+Usage mode
 --------
 Normal
 ```java
