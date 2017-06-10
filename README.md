@@ -44,7 +44,7 @@ new GlobalDialog.Builder()
                 .setDescription("hello world") 
                 .build().show();
 ```
-Snapshots of the development version are available in [Tangxianming's `snapshots` repository][snap].
+For more information, please refer to [source code][snap].
 
 License
 -------
@@ -63,4 +63,4 @@ License
 
 
  [1]: http://www.jianshu.com/p/d0f3e9705860
- [snap]: https://dl.bintray.com/kimball/maven/
+ [snap]: https://github.com/tangxianming/global-dialog/blob/master/globaldialog/src/main/java/com/txm/topcodes/globaldialog/GlobalDialog.java
