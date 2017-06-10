@@ -5,6 +5,22 @@ A **global** dialog frame for Android. For another reading pattern see [the webs
 
 ![](http://upload-images.jianshu.io/upload_images/2109293-dec5ac150c17ff3e.gif?imageMogr2/auto-orient/strip)
 
+Download
+--------
+Maven:
+```xml
+<dependency>
+  <groupId>com.txm.topcodes.globaldialog</groupId>
+  <artifactId>globaldialog</artifactId>
+  <version>0.1.6</version>
+  <type>pom</type>
+</dependency>
+```
+or Gradle:
+```groovy
+compile 'com.txm.topcodes.globaldialog:globaldialog:0.1.6'
+```
+Snapshots of the development version are available in [Tangxianming's `snapshots` repository][snap].
 Usage mode
 --------
 Common：
@@ -28,25 +44,6 @@ new GlobalDialog.Builder()
                 .setDescription("hello world") 
                 .build().show();
 ```
-
-Download
---------
-
-Maven:
-```xml
-<dependency>
-  <groupId>com.txm.topcodes.globaldialog</groupId>
-  <artifactId>globaldialog</artifactId>
-  <version>0.1.6</version>
-  <type>pom</type>
-</dependency>
-```
-or Gradle:
-```groovy
-compile 'com.txm.topcodes.globaldialog:globaldialog:0.1.6'
-```
-
-Snapshots of the development version are available in [Tangxianming's `snapshots` repository][snap].
 
 License
 -------
