@@ -40,5 +40,5 @@ License
     limitations under the License.
 
 
- [1]: http://www.jianshu.com/writer#/notebooks/6767015/notes/13166270
+ [1]: http://www.jianshu.com/p/d0f3e9705860
  [snap]: https://dl.bintray.com/kimball/maven/
